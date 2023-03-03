@@ -1,0 +1,101 @@
+:root {
+
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-cyan);
+    background-image: url(../Images/bg-pattern-top.svg);
+    background-size: cover;
+}
+.card {
+    width: 380px;
+    border-radius: 1rem;
+    background-color: white;
+}
+.card .card-container {
+    border-radius: 1rem;
+}
+.card .card-container .image {
+    width: 380px;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.card .card-container .image img {
+    width: 100%;
+    height: 160px;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.card .card-container .text-container {
+    padding: 3rem;
+    padding-bottom: 0;
+}
+.card .card-container .text-container .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -100px;
+}
+.card .card-container .text-container .info img {
+    width: 40%;
+    border-radius: 50%; 
+    border: 10px solid white;
+}
+.card .card-container .text-container .info h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.card .card-container .text-container .info h1 span {
+    color: var(--Dark-gray);
+    font-weight: 400;
+}
+.card .card-container .text-container .info p {
+    font-weight: 500;
+    color: var(--Dark-gray);
+}
+hr {
+    border-bottom: 1px solid var(--Dark-gray);
+    border-top: 0;
+    font-weight: 100;
+    opacity: .4;
+}
+.card .card-container .text-container .details {
+    display: flex;
+    justify-content: space-between;
+}
+.card .card-container .text-container .details div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card .card-container .text-container .details div h2 {
+    margin: 0;
+    margin-top: 16px;
+}
+.card .card-container .text-container .details div p {
+    margin: 5px 0 30px;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--Dark-grayish-blue);
+}
+@media (max-width: 450px) {
+    body {
+        margin: auto;
+    }
+    .card {
+        width: 350px;
+    }
+    .card .card-container .image {
+        width: 350px;
+    }
+}
